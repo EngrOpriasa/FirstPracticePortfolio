@@ -1,0 +1,413 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Arimo&family=Major+Mono+Display&family=Montez&family=Unna&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
+    
+}
+
+header,
+section{
+    overflow-x: hidden; /*Leave the space between left and right header and section*/
+}
+
+:root{
+    --Arima-Madurai:"Arima-Madurai", cursive;
+    --Arimo:"Arimo", cursive;
+    --Major-Mono-Display:"Major-Mono-Display", cursive;
+    --Montez:"Montez", cursive;
+    --Unna:"Unna", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(
+        to top,
+        #09203f, #537895);
+    --bggradient1: linear-gradient(
+        to top, 
+        #ff9a9e 0%, #fecfef 99%, #fecfef 100%);  
+    
+    --bggradient2: linear-gradient(
+        to right, #434343 0%, black 100%);
+
+    --light-gray:rgba(255, 255, 255, 0.877)
+}
+
+/*---------------------------------------------------------*/
+
+/*Header*/
+
+header a{
+    font-family: var(--Unna);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header{
+    background: var(--bggradient);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: rgb(74, 204, 193);
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+header .navbar{
+    background: #537895;
+}
+
+header .nav-item:last-child{
+    padding-right: 5.5em;
+}
+
+header .nav-item{
+    padding-inline-start: 0.9em;
+    font-size: 1.3em;
+    color: white;
+}
+
+header .navbar-brand{
+    padding-left: 8rem;
+    font-size: 2rem;
+}
+
+header .nav-link:hover{
+    color: black;
+    border-bottom: 1px solid;
+    border-color: yellow;
+}
+
+header .row .col-md-5{
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+    height: 70%;
+    padding-top: 12vmin;
+}
+
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    color: white;
+    font-family: var(--Major-Mono-Display);
+}
+
+header .container .col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p{
+    padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 p::first-letter{
+    font-size: xx-large;
+}
+
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* Header end */
+
+/*---------------------------------------------------------*/
+
+/* Scroll bar effects */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(22, 17, 17, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #7a6a52, #8ac6e2);
+    border-radius: 2px;
+}
+/* Scroll bar effects end */
+
+/*---------------------------------------------------------*/
+
+/* Section 1 */
+.section-1{
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 90%;
+    height: 100%;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -2vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 6vmin 5vmin 5vmin 5vmin;
+    box-shadow: 0px 25px 42px rgba(56, 207, 131, 0.2);
+    font-family: var(--Arimo);.
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.1em 0;
+    font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.7);
+}
+/* Section 1 end */
+
+/*---------------------------------------------------------*/
+
+/* Section 2 */
+.cover{
+   
+    width: 100%;
+    height: 55vmin;
+    background: url(../assets/pic6.jpg);
+    background-position: 0em;
+    background-size: 100%;
+    position: relative;
+}
+
+.cover .content{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content > h1{
+    font-family: var(--Arimo);
+    font-size: 6vmin;
+}
+
+.cover .content>p{
+    font-family: var(--Montez);
+    font-size: 3.4vmin;
+}
+
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 20px 0px rgba(223, 212, 150, 0.7);
+}
+
+.numbers{
+    margin-top: -10vmin;
+}
+
+.numbers .rect h1{
+    font-size: 5rem;
+    color: tomato;
+}
+
+.numbers .rect p{
+    font-family: var(--Unna);
+}
+
+.purchase h1{
+    padding-top: 7vmin;
+    padding: 0.1em;
+    font-family: var(--Arima-Madurai);
+}
+
+.purchase >p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 7vmin;
+}
+
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+
+.cards .title{
+    background: rgba(171, 233, 241, 0.7);
+    padding: 1.4rem 2.5rem;
+    font-size: 2.5vmin;
+}
+
+.card .card-text{
+    padding: 2.5rem 3rem;
+    color: black 80%;
+}
+
+.card-body .pricing{
+    background: rgba(202, 231, 235, 0.7);
+    opacity: 70%;
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+    font-size: 5vmin;
+    padding: 1em 0.5em;
+}
+
+/* Section 2 end */
+
+/*---------------------------------------------------------*/
+
+/* Section 3 */
+.section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient1);
+}
+
+.section-3 .col-md-12>h1{
+    padding: 2em 0 0.5em 0;
+    color: black;
+    opacity: 80%;
+    font-size: 5.5vmin;
+}
+
+.section-3 .col-md-12>p{
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: rgb(39, 18, 33);
+    font-size: 3vmin;
+}
+
+.section-3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+/* Section 3 end */
+
+/*---------------------------------------------------------*/
+
+/* Section 4 */
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+.section-4 .team{
+    padding: 10vmin 4vmin;
+}
+
+.section-4 .card{
+    width: 22rem;
+    margin-top: 10vmin;
+}
+
+.section-4 .card .card-text{
+    padding: 0.5em;
+}
+
+.section-4 .card .card-body>a{
+    font-size: 1.5em;
+}
+
+.section-4 .carousel-item{
+    padding-left: 1rem;
+}
+
+.border-radius{
+    border-radius: 340px;
+    width: 60%;
+}
+/* Section 4 end */
+
+/*---------------------------------------------------------*/
+
+/* Footer */
+footer{
+    background: var(--bggradient2);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span{
+    color: #ff512f;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder{
+    color: white !important;
+}
+
+footer .input-group .input-group-text{
+    background: var(--bggradient1);
+    border: none;
+}
+
+footer .column i{
+    color: lightyellow;
+    padding: 0 0.5rem;
+}
+
+footer .column i+i{
+    
+}
+/* Footer end */
+
+/*---------------------------------------------------------*/
